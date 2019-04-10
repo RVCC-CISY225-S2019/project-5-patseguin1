@@ -90,21 +90,31 @@
 	</main>
 	<hr>
 	<section class="form-container">
-	    <form method="POST" action="https://formspree.io/patseguin1@gmail.com">
-           <fieldset>
-           <legend>Please Feel Free to Contact Me</legend><br>
-            Email <br>
-            <textarea></textarea><br><br><br>
-            <fieldset><legend>I would like a reply</legend>
-                <input type="radio">Yes<br><br>
-                <input type="radio">No<br>
-            </fieldset>
-            <br><br>
-            Message <br>
-            <input type="text"><br><br>
-               <button type="submit" value="Send Message">Send Message</button><br>
-            </fieldset>
-        </form>
+		<h1>Get in Touch</h1>
+		<form method="POST" action="https://formspree.io/patseguin1@gmail.com">
+			<fieldset>
+				<legend>Please Feel Free to Contact Me</legend>
+				<label for="email">Email</label>
+				<br>
+				<input id="email" type="email" name="email" required aria-required="true" aria-invalid="true" aria-describedby="email_error">
+				<br><br>
+
+				<label for="message">Message</label>
+				<br>
+				<textarea id="message" name="message"></textarea>
+				<br><br><br>
+				<fieldset>
+					<legend>I would like a reply</legend>
+					<input type="radio" id="reply-yes" name="reply" value="yes" checked>
+					<label for="reply-yes">Yes</label>
+					<br><br>
+					<input type="radio" id="reply-no" name="reply" value="no">
+					<label for="reply-no">No</label>
+				</fieldset>
+				<br><br>
+				<button type="submit">Send Message</button>
+			</fieldset>
+		</form>
 	</section>
 	<hr>
 	<footer class="footer">
